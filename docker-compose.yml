@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+
+    grafana:
+      container_name: grafana
+      image: grafana/grafana:latest
+      restart: unless-stopped
+      user: "0"
+      ports:
+        - "3000:3000"
+      volumes:
+        - <location_for_data>:/var/lib/grafana # change me
+        - <location_for_log>:/var/log/grafana # change me
+        - <location_for_provisioning>:/etc/grafana/provisioning # change me
+      environment:
+        - GF_PATHS_DATA=/var/lib/grafana
+        - GF_PATHS_LOGS=/var/log/grafana
+        - influxdb
+      logging:
+        options:
+          max-size: "5m"
+          max-file: "3"    
+    
+    influxdb:
+      container_name: influxdb
+      image: influxdb:1.8.10
+      restart: unless-stopped
+      ports:
+      - "8086:8086"
+      environment:
+      - "INFLUXDB_REPORTING_DISABLED=false"
+      - "INFLUXDB_STORE_ENABLED=false"
+      - "INFLUXDB_QUERY_LOG_ENABLED=false"
+      - "INFLUXDB_ADMIN_ENABLED=true"
+      volumes:
+      - <location_for_data>:/var/lib/influxdb # change me
+      - <location_for_db>:/var/lib/influxdb/backup # change me
+      logging:
+        options:
+          max-size: "5m"
+          max-file: "3"
