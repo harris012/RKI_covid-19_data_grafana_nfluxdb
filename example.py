@@ -26,7 +26,8 @@ for d in data:
 			"cases_per_population":d['attributes']["cases_per_population"],
 			"deaths":d['attributes']["deaths"],
 			"death7_bl":d['attributes']["death7_bl"],
-			"death7_lk":d['attributes']["death7_lk"]
+			"death7_lk":d['attributes']["death7_lk"],
+			"last_update":d['attributes']["last_update"]
 		}}]
 	client.write_points(json_body)
 
