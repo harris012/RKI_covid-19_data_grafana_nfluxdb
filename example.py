@@ -27,6 +27,7 @@ for d in data:
 			"deaths":d['attributes']["deaths"],
 			"death7_bl":d['attributes']["death7_bl"],
 			"death7_lk":d['attributes']["death7_lk"],
+			# TODO parse time to understandable by grafana
 			"last_update":d['attributes']["last_update"]
 		}}]
 	client.write_points(json_body)
