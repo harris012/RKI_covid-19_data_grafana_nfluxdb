@@ -25,7 +25,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 4,
-  "iteration": 1655075890746,
+  "iteration": 1655080627481,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -73,7 +73,8 @@
           "values": false
         },
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "text": {}
       },
       "pluginVersion": "8.5.5",
       "targets": [
@@ -310,7 +311,8 @@
           "displayMode": "table",
           "placement": "right",
           "values": [
-            "percent"
+            "percent",
+            "value"
           ]
         },
         "pieType": "pie",
@@ -322,8 +324,8 @@
           "values": false
         },
         "tooltip": {
-          "mode": "single",
-          "sort": "none"
+          "mode": "multi",
+          "sort": "asc"
         }
       },
       "targets": [
@@ -415,9 +417,14 @@
       },
       "id": 10,
       "options": {
+        "displayLabels": [],
         "legend": {
-          "displayMode": "list",
-          "placement": "right"
+          "displayMode": "table",
+          "placement": "right",
+          "values": [
+            "percent",
+            "value"
+          ]
         },
         "pieType": "pie",
         "reduceOptions": {
@@ -428,8 +435,8 @@
           "values": false
         },
         "tooltip": {
-          "mode": "single",
-          "sort": "none"
+          "mode": "multi",
+          "sort": "asc"
         }
       },
       "targets": [
@@ -642,7 +649,7 @@
     "list": [
       {
         "current": {
-          "selected": true,
+          "selected": false,
           "text": [
             "Baden-Württemberg"
           ],
@@ -671,11 +678,15 @@
         "current": {
           "selected": true,
           "text": [
-            "Alb-Donau-Kreis"
+            "Baden-Baden"
           ],
           "value": [
-            "Alb-Donau-Kreis"
+            "Baden-Baden"
           ]
+        },
+        "datasource": {
+          "type": "influxdb",
+          "uid": "E6ryEIZRk"
         },
         "definition": "SHOW TAG VALUES WITH KEY = \"city\" WHERE State =~/^$State$/",
         "hide": 0,
@@ -700,6 +711,6 @@
   "timezone": "",
   "title": "Covid Dasboard",
   "uid": "TgTHMMggz",
-  "version": 26,
+  "version": 27,
   "weekStart": ""
 }
