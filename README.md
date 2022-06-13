@@ -15,3 +15,15 @@ docker-compose up -d
 ```
 - Check if the all the containers are running by executing `docker ps`.
 - Open the UI of Node-RED to import the flow `nodered_flow.json` in order to run the Python script in it.
+
+
+
+
+
+Visualise example of Covid Dashboard see below:
+![Screenshot from 2022-06-13 02-12-17](https://user-images.githubusercontent.com/57041349/173259503-6ff00ae1-b5c2-4b24-b53f-fc625f69d5ea.png)
+
+State and City can be selected by the variables on the pannel see Examples below
+![Screenshot from 2022-06-13 02-06-06](https://user-images.githubusercontent.com/57041349/173259743-ab00b9b9-5148-46ae-97b6-6384a3f48d26.png)
+![Screenshot from 2022-06-13 02-06-53](https://user-images.githubusercontent.com/57041349/173259748-56ba9943-576b-45c8-b163-96bf97300bde.png)
+
