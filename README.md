@@ -15,6 +15,7 @@ docker-compose up -d
 ```
 - Check if the all the containers are running by executing `docker ps`.
 - Open the UI of Node-RED to import the flow `nodered_flow.json` in order to run the Python script in it.
+- See Example below:![Screenshot from 2022-06-13 02-29-33](https://user-images.githubusercontent.com/57041349/173260178-8deead4c-621d-4b85-8693-a27a388ab178.png)
 
 
 
