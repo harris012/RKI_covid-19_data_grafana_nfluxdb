@@ -23,6 +23,3 @@ docker-compose up -d
 
 
 
-https://user-images.githubusercontent.com/57041349/173683057-6bce822c-f74c-4eb4-8690-f3117f21f0ea.mp4
-
-
