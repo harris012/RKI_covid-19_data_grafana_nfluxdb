@@ -25,7 +25,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 4,
-  "iteration": 1655080627481,
+  "iteration": 1655237753705,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -76,7 +76,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "8.5.5",
+      "pluginVersion": "9.0.0",
       "targets": [
         {
           "datasource": {
@@ -525,12 +525,15 @@
               "viz": false
             },
             "lineInterpolation": "linear",
-            "lineWidth": 2,
-            "pointSize": 5,
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 8,
+            "pointSize": 9,
             "scaleDistribution": {
               "type": "linear"
             },
-            "showPoints": "never",
+            "showPoints": "auto",
             "spanNulls": true,
             "stacking": {
               "group": "A",
@@ -542,7 +545,7 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
                 "color": "green",
@@ -569,11 +572,11 @@
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "right"
         },
         "tooltip": {
           "mode": "multi",
-          "sort": "none"
+          "sort": "asc"
         }
       },
       "pluginVersion": "8.5.5",
@@ -586,7 +589,7 @@
           "groupBy": [
             {
               "params": [
-                "$__interval"
+                "24h"
               ],
               "type": "time"
             },
@@ -613,6 +616,12 @@
               {
                 "params": [],
                 "type": "mean"
+              },
+              {
+                "params": [
+                  "Cases"
+                ],
+                "type": "alias"
               }
             ],
             [
@@ -625,6 +634,12 @@
               {
                 "params": [],
                 "type": "mean"
+              },
+              {
+                "params": [
+                  "Death Rate"
+                ],
+                "type": "alias"
               }
             ]
           ],
@@ -676,12 +691,12 @@
       },
       {
         "current": {
-          "selected": true,
+          "selected": false,
           "text": [
-            "Baden-Baden"
+            "Karlsruhe"
           ],
           "value": [
-            "Baden-Baden"
+            "Karlsruhe"
           ]
         },
         "datasource": {
@@ -711,6 +726,6 @@
   "timezone": "",
   "title": "Covid Dasboard",
   "uid": "TgTHMMggz",
-  "version": 27,
+  "version": 29,
   "weekStart": ""
 }
