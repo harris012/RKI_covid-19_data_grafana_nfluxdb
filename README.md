@@ -14,14 +14,11 @@ docker-compose pull
 docker-compose up -d
 ```
 - Check if the all the containers are running by executing `docker ps`.
-- Open the UI of Node-RED to import the flow `nodered_flow.json` in order to run the Python script in it.
+- Open the UI of Node-RED to import the flow  from the file `nodered_flow.json` in order to run the Python script in it.
 - See Example below:![Screenshot from 2022-06-13 02-29-33](https://user-images.githubusercontent.com/57041349/173260178-8deead4c-621d-4b85-8693-a27a388ab178.png)
 
-
-
-
-
-Visualise example of Covid Dashboard see below:
+- Import the grafana dashboard model from the file `grafana_dashboard_model.json` in the grafana UI.
+- Visualisation example of Covid Dashboard see below:
 ![Screenshot from 2022-06-13 02-12-17](https://user-images.githubusercontent.com/57041349/173259503-6ff00ae1-b5c2-4b24-b53f-fc625f69d5ea.png)
 
 
