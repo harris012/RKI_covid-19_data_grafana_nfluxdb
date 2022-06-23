@@ -1,6 +1,6 @@
 # Covid-19 data from RKI Visualisation with grafana influxdb & Node-Red
 
-As a big fan of containerised applications, I decided to fetch the latest covid api data from [RKI website](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/api). Fetch api data from [Python](https://www.python.org/) and automate the script in the [Node-RED](https://nodered.org/) to fetch the latest data every day at 3:00 am.
+As a big fan of containerised applications, I decided to fetch the latest covid api data from [RKI (Robert Koch Institute) website](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/api). Fetch api data from [Python](https://www.python.org/) and automate the script in the [Node-RED](https://nodered.org/) to fetch the latest data every day at 3:00 am.
 Save it to [influxdb](https://www.influxdata.com/) and visualise it in the [Grafana](https://grafana.com/) dashboard.
 
 ## Installation Requirements
